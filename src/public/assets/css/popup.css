@@ -1,0 +1,86 @@
+input[class*='popup_check'] {
+    display: none;
+}
+.row:has(input[id='popup1']) > div[id='popup_box1'] {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+.row:has(input[id='popup1']:checked) > div[id='popup_box1'] {
+    display: block;
+}
+
+.row:has(input[id='popup2']) > div[id='popup_box2'] {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+.row:has(input[id='popup2']:checked) > div[id='popup_box2'] {
+    display: block;
+}
+
+.row:has(input[id='popup3']) > div[id='popup_box3'] {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+.row:has(input[id='popup3']:checked) > div[id='popup_box3'] {
+    display: block;
+}
+
+.row:has(input[id='popup4']) > div[id='popup_box4'] {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+.row:has(input[id='popup4']:checked) > div[id='popup_box4'] {
+    display: block;
+}
+
+.row:has(input[id='popup5']) > div[id='popup_box5'] {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+.row:has(input[id='popup5']:checked) > div[id='popup_box5'] {
+    display: block;
+}
+
+div[class*='popup_box'] > div {
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: blueviolet;
+    border-radius: 0%;
+    z-index: 1;
+}
+div[class*='popup_box'] > div > a > label {
+    color: white;
+}

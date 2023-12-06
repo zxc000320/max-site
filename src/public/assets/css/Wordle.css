@@ -1,0 +1,98 @@
+#Wordle_table {
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(10%, 0%);
+    margin-bottom: 18px;
+    margin-top: 18px;
+}
+
+Wordle_tr {
+    padding-left: 24px;
+    width: 1px;
+    height: 1px;
+}
+
+Wordle_td {
+    background: none;
+    border: 1px solid white;
+    color: black;
+    width: 50px;
+    height: 50px;
+    margin: 1px;
+    padding: 1px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    display: table-cell;
+}
+
+.Wordle_input {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    width: 50px;
+    height: 50px;
+    margin: 1px;
+    padding: 1px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.Wordle_button {
+    background: blueviolet;
+    border: 2px solid white;
+    font-size: 22px;
+    color: white;
+    padding: 10px 40px;
+    margin: 18px;
+    width: 140px;
+    height: 50px;
+    cursor: pointer;
+    position: relative;
+}
+
+.Wordle_reset_button {
+    background: blueviolet;
+    border: 2px solid white;
+    font-size: 22px;
+    color: white;
+    padding: 10px 40px;
+    margin: 18px;
+    width: 140px;
+    height: 50px;
+    cursor: pointer;
+    position: relative;
+}
+
+.Wordle_reset_button-swap span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    padding: 10px 0px;
+    width: 100%;
+    height: 50px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.Wordle_reset_button-swap:hover span {
+    opacity: 1;
+}
+
+.Wordle_reset_button-swap::before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: black;
+    transition: width 0.5s;
+}
+
+.Wordle_reset_button-swap:hover::before {
+    width: 100%;
+}

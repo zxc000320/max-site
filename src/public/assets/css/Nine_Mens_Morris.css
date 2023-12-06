@@ -1,0 +1,24 @@
+#Nine_Mens_Morris_table {
+    width: 455px;
+    height: 455px;
+    margin-left: 30px;
+    margin-bottom: 18px;
+    margin-top: 18px;
+}
+
+Nine_Mens_Morris_tr {
+}
+
+Nine_Mens_Morris_td {
+    background: none;
+    border: 1px solid blueviolet;
+    color: black;
+    width: 60px;
+    height: 60px;
+    margin: 1px;
+    padding: 1px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    display: table-cell;
+}

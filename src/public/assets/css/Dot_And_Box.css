@@ -1,0 +1,15 @@
+#Dot_And_Box_canvas {
+}
+
+.Dot_And_Box_button {
+    background: blueviolet;
+    border: 2px solid white;
+    font-size: 22px;
+    color: white;
+    padding: 10px 40px;
+    margin: 18px;
+    width: 207px;
+    height: 75px;
+    cursor: pointer;
+    position: relative;
+}
