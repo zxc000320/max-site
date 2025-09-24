@@ -1,0 +1,35 @@
+#screen{
+	margin-top: 25px;
+	text-align: center;
+	user-select: none;
+	height: 500px;
+	width: 600px;
+}
+#screen.waiting{
+	background-color: #3232FF;
+}
+#screen.ready{
+	background-color: #D24C75;
+}
+#screen.miss{
+	background-color: gray;
+}
+#screen.now{
+	background-color: #4BAF4B;
+}
+#result{
+	padding-top: 50px;
+	text-align: center;
+	height: 300px;
+	width: 300px;
+}
+.Reaction_Speed_button {
+	margin-top: 450px;
+	margin-left: 680px;
+    background: blueviolet;
+    border: 2px solid white;
+    color: white;
+	height: 80px;
+	width: 150px;
+	position : absolute;
+}

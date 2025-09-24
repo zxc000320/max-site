@@ -1,0 +1,105 @@
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Test_Make_HTML</title>
+		
+		<!-- Bootstrap core CSS -->
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Additional CSS Files -->
+		<link rel="stylesheet" href="assets/css/fontawesome.css">
+		<link rel="stylesheet" href="assets/css/templatemo.css">
+		<link rel="stylesheet" href="assets/css/owl.css">
+		<link rel="stylesheet" href="assets/css/lightbox.css">
+		
+		<!-- Omok -->
+		<link rel="stylesheet" href="assets/css/Omok.css">
+		<script defer src="assets/js/Omok.js"></script>
+		<style></style>
+		
+		<link href="//fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/reset.css">
+		<link rel="stylesheet" href="assets/css/board.css">
+		<link rel="stylesheet" href="assets/css/button.css">
+
+		<script src="assets/js/object/query.min.js"></script>
+		<script src="assets/js/object/math.js"></script>
+		<script src="assets/js/object/array.js"></script>
+		<script src="assets/js/object/promise.js"></script>
+		<script src="assets/js/game/core.js"></script>
+		<script src="assets/js/game/stone.js"></script>
+		<script src="assets/js/game/ban.js"></script>
+		<script src="assets/js/game/win.js"></script>
+		<script src="assets/js/canvas/get.js"></script>
+		<script src="assets/js/canvas/stone.js"></script>
+		<script src="assets/js/canvas/board.js"></script>
+		<script src="assets/js/user/select.js"></script>
+		<script src="assets/js/user/keyboard.js"></script>
+		<script src="assets/js/AI/core.js"></script>
+		<script src="assets/js/AI/test.js"></script>
+		
+	</head>
+	<body>
+		<header class="main-header clearfix" role="header">
+			<div class="logo">
+			  <a href="#"><em>TEST</em>작업물</a>
+			</div>
+			<a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+			<nav id="menu" class="main-nav" role="navigation">
+			  <ul class="main-menu">
+				<li><a href="index.html">메인</a></li>
+				<li><a href="Test_Make.html">테스트중</a></li>
+				<li><a href="dispose_01.html" class="external">페기물_1</a></li>
+				<li><a href="dispose_02.html" class="external">페기물_2</a></li>
+				<li><a href="dispose_03.html" class="external">페기물_3</a></li>
+				<li><a href="링크 아무거나" class="external">페기물_4</a></li>
+				<li><a href="링크 아무거나" class="external">페기물_5</a></li>
+			  </ul>
+			</nav>
+		</header>
+		<div style="padding:50px"></div>
+		<div class ="center">
+			<h1 id="header">Omok_Game</h1>
+			<br><br><br><br><br><br>
+			<canvas id="Omok_board" width="1000" height="1000"></canvas>
+			<div id="half">
+				<div id="stone-color-select">
+					<p>선공 또는 후공을 선택하십시오.</p>
+					<div id="select-black" class="button">흑돌 (선공) (Q)</div>
+					<div id="select-white" class="white button">백돌 (후공) (W)</div>
+				</div>
+				<div id="control-keys">
+					<div class="button" id="set-btn">착수 (Enter)</div>
+				</div>
+				<p>
+					이 게임은 <a id="Omok_comment" href="https://namu.wiki/w/렌주" target="_blank">렌주룰</a>을 따릅니다.
+				</p>
+				<div id="version"></div>
+				<div id="icons">
+					<img
+						src="assets/img/iconmonstr-github-2-240.png"
+						alt="github"
+						style="background:white"
+						onclick="window.open('https://github.com/hsh-game/omok', '_blank')">
+				</div>
+			</div>
+			<div class="Omok_container">
+				<h2 id="Omok_status">현재 턴 : ●<br>1 번째 턴입니다.</h2>
+				<div id="Omok_AIvsHM" class="text-xl font-light center">
+				  <input type="radio" name="check_AIvsHM" id="Omok_AI" value="Omok_AI" onClick="init()" checked> <label for="Omok_AI">1 player</label>
+				  <input type="radio" name="check_AIvsHM" id="Omok_Pl" value="Omok_Pl" onClick="init()"> <label for="Omok_Pl">2 player</label>
+				</div>
+				<canvas id="Omok_canvas" width="480" height="480"></canvas><br>
+				<button id="Omok_undo" type="button">한 수 무르기</button>
+				<button class="Omok_reset_button Omok_reset_button-swap" id="Omok_reset_button" onclick="Omok_reset()">
+					다시 하기<span>공수 교대</span>
+				</button><br>
+				<p>
+					이 게임은 <a id="Omok_comment" href="https://namu.wiki/w/렌주" target="_blank">렌주룰</a>을 따릅니다.
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
